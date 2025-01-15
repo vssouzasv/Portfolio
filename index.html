@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Vitória Silva</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo Geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+            color: white;
+        }
+
+        .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            padding: 40px 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #616161;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        header a:hover {
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-contato button {
+            padding: 10px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #A525F7;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-contato button:hover {
+            box-shadow: 0px 0px 8px #a725f7b9;
+            transform: scale(1.05);
+        }
+
+        /* Estilo da Seção de Topo */
+        .topo-do-site {
+            padding: 40px 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .txt-topo-site {
+            max-width: 600px;
+        }
+
+        .txt-topo-site h1 {
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+
+        .txt-topo-site h1 span {
+            color: #A525F7;
+            font-size: 84px;
+        }
+
+        .txt-topo-site p {
+            margin-bottom: 20px;
+        }
+
+        .img-topo-site img {
+            width: 300px;
+            animation: flutuante 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes flutuante {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <a href="#">
+                <img src="Imagens/vsilva.jpeg" alt="Logo Vitória Silva" width="150">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="txt-topo-site">
+                <h1>CODIFICANDO SOLUÇÕES, PROJETANDO O FUTURO <span>.</span></h1>
+                <p>Olá! Sou Vitória Silva, analista e desenvolvedora de sistemas, aprendiz de Front-End com foco em JavaScript, HTML e CSS. Tenho paixão por criar experiências digitais intuitivas e funcionais, combinando criatividade e atenção aos detalhes. Estou em constante aprendizado e sempre buscando novas formas de transformar ideias em soluções inovadoras.</p>
+                <div class="btn-contato">
+                    <a href="contato.html">
+                        <button>Entre em contato</button>
+                    </a>
+                </div>
+            </div>
+            <div class="img-topo-site">
+                <img src="Imagens/Fotinha.jpg" alt="Minha foto">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+echo "# Portf-lio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vssouzasv/Portf-lio.git
+git push -u origin main
